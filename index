@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { margin: 0; font-family: 'Roboto', Arial, sans-serif; background-color: #f6f8fc; color: #1f1f1f; }
+        .gmail-wrapper { display: flex; height: 100vh; }
+        
+        /* Barra Lateral Izquierda - Gmail Environment */
+        .sidebar { width: 250px; padding: 15px; background-color: #f6f8fc; flex-shrink: 0; }
+        .compose-btn { background-color: #c2e7ff; padding: 16px 24px; border-radius: 16px; display: inline-block; margin-bottom: 20px; font-weight: 500; font-size: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .menu-item { padding: 8px 12px; border-radius: 20px; font-size: 14px; cursor: pointer; display: flex; align-items: center; margin-bottom: 4px; }
+        .active { background-color: #d3e3fd; font-weight: bold; }
+
+        /* Área de Contenido Principal */
+        .main-content { flex-grow: 1; background-color: #ffffff; margin: 8px 8px 8px 0; border-radius: 16px; overflow-y: auto; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+        
+        /* Toolbar Superior */
+        .header-actions { padding: 12px 16px; border-bottom: 1px solid #f1f1f1; display: flex; gap: 20px; color: #444746; align-items: center; }
+        .action-icon { font-size: 18px; cursor: pointer; }
+A
+        /* Encabezado del Correo */
+        .email-header { padding: 20px 16px; border-bottom: 1px solid #f1f1f1; }
+        .email-subject { font-size: 22px; color: #1f1f1f; margin-bottom: 15px; }
+        .sender-info { display: flex; align-items: center; gap: 12px; }
+        .avatar { width: 40px; height: 40px; background-color: #e8f0fe; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #1a73e8; }
+        .sender-details { font-size: 14px; line-height: 1.4; }
+        .sender-name { font-weight: bold; }
+        .sender-email { color: #5e5e5e; font-size: 12px; }
+
+        /* Contenedor del Mensaje Replicado */
+        .email-body-area { padding: 40px 20px; background-color: #ffffff; }
+        .instagram-card { max-width: 600px; margin: auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; background-color: #ffffff; }
+    </style>
+</head>
+<body>
+
+<div class="gmail-wrapper">
+    <div class="sidebar">
+        <div class="compose-btn">✎ Redactar</div>
+        <div class="menu-item active">📥 Recibidos (4.036)</div>
+        <div class="menu-item">⭐ Destacados</div>
+        <div class="menu-item">🕒 Pospuestos</div>
+        <div class="menu-item">▶ Enviados</div>
+        <div class="menu-item">📑 Borradores</div>
+        <div class="menu-item">📂 Más</div>
+    </div>
+
+    <div class="main-content">
+        <div class="header-actions">
+            <span class="action-icon">←</span> <span class="action-icon">🗄️</span> <span class="action-icon">⚠️</span> <span class="action-icon">🗑️</span> 
+            <span style="color: #ddd;">|</span>
+            <span class="action-icon">✉️</span> <span class="action-icon">🕒</span> <span class="action-icon">✅</span>
+        </div>
+
+        <div class="email-header">
+            <div class="email-subject">Nuevo inicio de sesión en Instagram desde Opera en Windows</div>
+            <div class="sender-info">
+                <div class="avatar">I</div>
+                <div class="sender-details">
+                    <span class="sender-name">Instagram</span> <span class="sender-email">&lt;security@mail.instagram.com&gt;</span>
+                    <div style="color: #5e5e5e; font-size: 12px;">para mí</div>
+                </div>
+                <div style="margin-left: auto; color: #5e5e5e; font-size: 12px;">20 sept 2025, 0:33</div>
+            </div>
+        </div>
+
+        <div class="email-body-area">
+            <div class="instagram-card">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="padding: 40px; text-align: center;">
+                    <tr>
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram" width="100" style="display: block; margin: auto;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 22px; color: #262626; padding-top: 40px; padding-bottom: 10px;">
+                            Hemos detectado un nuevo inicio de sesión, asoto_j
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 16px; color: #8e8e8e; padding-bottom: 30px;">
+                            Hemos detectado un inicio de sesión desde un dispositivo que normalmente no usas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <div style="width: 80px; height: 80px; border: 1px solid #dbdbdb; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: auto;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/683/683222.png" width="40" alt="Monitor">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 18px; color: #262626; padding-top: 25px; font-weight: 400;">
+                            Windows · Opera · Tijuana, Mexico
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 14px; color: #8e8e8e; padding-top: 5px;">
+                            September 20 at 12:33 AM (PDT)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div style="margin: 40px 0; border-top: 1px solid #efefef;"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8e8e8e; font-size: 14px; line-height: 1.6; padding-bottom: 20px;">
+                            Si has sido tú, no podrás acceder a ciertas opciones de seguridad y a la configuración de la cuenta durante unos días. Podrás seguir accediendo a esta configuración desde un dispositivo en el que hayas iniciado sesión en el pasado.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 14px;">
+                            Si no has sido tú, puedes <a href="#" style="color: #0095f6; text-decoration: none; font-weight: 600;">proteger tu cuenta</a> desde un dispositivo en el que hayas iniciado sesión en el pasado. <a href="#" style="color: #0095f6; text-decoration: none;">Más información</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 50px;">
+                            <span style="color: #c7c7c7; font-size: 12px;">from</span><br>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1024px-Meta_Platforms_Inc._logo.svg.png" width="60" style="margin: 10px 0;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 11px; color: #8e8e8e; padding-top: 10px;">
+                            © Instagram. Meta Platforms, Inc., 1601 Willow Road, Menlo Park, CA 94025<br><br>
+                            Este mensaje se ha enviado a <span style="text-decoration: underline;">angelsotojacabo@gmail.com</span> y está dirigido a asoto_j. ¿No es tu cuenta?<br>
+                            <a href="#" style="color: #8e8e8e; text-decoration: underline;">Suprime tu correo electrónico</a> de esta cuenta.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
